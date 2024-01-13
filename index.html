@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input class="search-city" type="text" placeholder="Enter your city" />
+        <button class="btn">Search</button>
+      </div>
+      <main>
+        <div class="actual">
+          <div class="first-column">
+            <div class="temp"></div>
+            <div class="week-day"></div>
+            <div class="time"></div>
+            <div class="prec-wind">
+              <div class="hum">
+                <div>Humidity</div>
+                <div class="hum-integer"></div>
+              </div>
+              <div class="wind">
+                <div>Wind speed</div>
+                <div><span class="wind-integer"></span> km/h</div>
+              </div>
+            </div>
+          </div>
+          <div class="city-coords">
+            <div class="city"></div>
+            <div id="map">Aici vine harta</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
